@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pruebas de Compatibilidad Web</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pruebas de Compatibilidad Web</h1>
+        <p>
+            Página creada para comprobar su funcionamiento
+            en diferentes navegadores.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="tarjeta">
+            <h2>Compatibilidad entre navegadores</h2>
+
+            <p>
+                Esta página será probada posteriormente en
+                Google Chrome, Mozilla Firefox y Microsoft Edge.
+            </p>
+
+            <div class="globo">🌐</div>
+
+            <button id="botonMensaje" type="button">
+                Probar botón
+            </button>
+
+            <p id="mensaje"></p>
+        </section>
+
+
+        <section class="tarjeta">
+
+            <h2>Formulario de prueba</h2>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre:</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="correo">Correo electrónico:</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="resultado"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Actividad 2 - Pruebas de compatibilidad entre
+            el sistema y el software
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
