@@ -1,12 +1,28 @@
-const formulario = document.getElementById("formulario");
-const resultado = document.getElementById("resultado");
+document.addEventListener("DOMContentLoaded", function () {
 
-formulario.addEventListener("submit", function(evento) {
+    const boton = document.getElementById("botonMensaje");
+    const mensaje = document.getElementById("mensaje");
 
-    evento.preventDefault();
+    boton.addEventListener("click", function () {
+        mensaje.textContent = "¡El botón funciona correctamente!";
+    });
 
-    const nombre = document.getElementById("nombre").value;
+    const formulario = document.getElementById("formulario");
+    const resultado = document.getElementById("resultado");
 
-    resultado.textContent = "Formulario enviado correctamente. ¡Hola, " + nombre + "!";
+    formulario.addEventListener("submit", function (evento) {
+
+        evento.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+
+        if (nombre === "") {
+            resultado.textContent = "Por favor, escribe tu nombre.";
+        } else {
+            resultado.textContent =
+                "Formulario enviado correctamente. ¡Hola, " + nombre + "!";
+        }
+
+    });
 
 });
